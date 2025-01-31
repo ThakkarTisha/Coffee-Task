@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!--Bootstrap-css-link-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--Font-awesome-link-->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+
+    <!--Custom-css-link-->
+    <link rel="stylesheet" href="../assets/scss/style.css">
+  </head>
+  <body>
+<!-- Mega-menu css start-->
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/navlogo.png" alt="">COFFEE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="login.html">Log-in</a></li>
+                      <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="shop-list.html">Product-list</a></li>
+                      <li><a class="dropdown-item" href="product-detail.html">Product-detail</a></li>
+                      <li><a class="dropdown-item" href="#!">Shop</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                  </li>
+                  <li class="icons">
+                    <a href="login.html">
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li class="onhover-div mobile-cart icons">
+                    <div data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </li>
+                  <li class="icons">
+                    <a href="#!">
+                      <i class="fa-solid fa-heart"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+    </div>
+</header>
+<!-- Mega-menu css Ends-->
+<section class="main_section">
+    <div class="banner_wrapper">
+        <div class="banner-content">
+            <h1>We offer a delicious variety of coffee</h1>
+        <p>We have everything from classic coffee to our house made specialty beverages.</p>
+        <div class="buttons">
+            <button class="table-btn">
+                BOOK A TABLE
+            </button>
+            <button class="shop-btn">
+                VISIT OUR SHOP
+            </button>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="product_wrapper section-space">
+  <p>Check out our selection of featured coffees and products</p>
+  <h1>Here you can buy our featured products</h1>
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-img">
+        <a href="product-detail.html">
+          <img src="../assets/images/product1.webp" alt="product1">
+        </a>
+        <ul class="product-option">
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+              <a href="javascript:void(0)" data-bs-toggle="modal"
+                  data-bs-target="#view">
+                  <i class="fa-regular fa-eye"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+              <a href="#!">
+                <i class="fa-solid fa-rotate"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+              <a href="#!" class="notifi-wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-content">
+        <h5>Campfire Blend</h5>
+        <span><del>£30.00</del>£19.00</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <a href="product-detail.html">
+        <img src="../assets/images/product2.png" alt="product2">
+        </a>
+        <ul class="product-option">
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+              <a href="#!">
+                  <i class="fa-regular fa-eye"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+              <a href="#!">
+                <i class="fa-solid fa-rotate"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+              <a href="#!" class="notifi-wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-content">
+        <h5>Basecamp Blend</h5>
+        <span>£19.00</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <a href="product-detail.html">
+          <img src="../assets/images/img-3-shop.webp" alt="product3">
+        </a>
+        <ul class="product-option">
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+              <a href="javascript:void(0)" data-bs-toggle="modal"
+                  data-bs-target="#view">
+                  <i class="fa-regular fa-eye"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+              <a href="#!">
+                <i class="fa-solid fa-rotate"></i>
+              </a>
+          </li>
+          <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+              <a href="#!" class="notifi-wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-content">
+        <h5>Backwoods Roast</h5>
+        <span>£21.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="shop_wrapper section-space">
+  <p>From floral and bright to bold and smooth coffee flavors</p>
+  <h1>Providing unique coffee experiences</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 col-12">
+        <div class="shop-image">
+          <img src="../assets/images/shop1.jpg" alt="shop-img2" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-xxl-6 col-12">
+        <div class="shop-content">
+          <h5>We believe this is the best coffee in New York. Try it for yourself!</h5>
+          <p>Our roasts feature multiple underlying notes. We believe the 
+            unexpected can happen when good design and great coffee come together.
+            We also believe there is an outside in all of us to be found.</p>
+          <div class="button"><a href="shop-list.html">VISIT SHOP</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <section class="service border-section small-section">
+    <div class="row">
+      <div class="col-lg-4 service-block">
+        <div class="media">
+          <img src="../assets/images/truck.png" class="img-fluid" alt="truck-img">
+          <div class="media-body">
+            <h4>Free Shipping</h4>
+            <p>free shipping world wide</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 service-block">
+        <div class="media">
+          <img src="../assets/images/247.png" class="img-fluid" alt="24/7 img">
+          <div class="media-body">
+            <h4>24 X 7 service</h4>
+            <p>online service for new customer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 service-block">
+        <div class="media">
+          <img src="../assets/images/sale.png" class="img-fluid" alt="sale img">
+          <div class="media-body">
+            <h4>festival offer</h4>
+            <p>new online special festival offer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="rtl-buttons">
+  <div class="sections">
+    <h6>RTL Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="rtlmode" class="form-check-input">
+    </div>
+  </div>
+  <div class="sections">
+    <h6>Dark Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="darkmode" class="form-check-input">
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas">
+  <div class="offcanvas-header">
+      <h3 class="offcanvas-title">My Cart(2)</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+          <i class="ri-close-line"></i>
+      </button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="sidebar-title">
+          <a href="#!">Clear Cart</a>
+      </div>
+      <div class="cart-media">
+          <ul class="cart-product">
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product1.webp" class="img-fluid"
+                              alt="Coffee-img">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Campfire Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>2 x £19.00</span>
+                          </h4>
+
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product2.png" class="img-fluid"
+                              alt="Classic Jacket">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Basecamp Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>1 x £19.00</span>
+                          </h4>
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <ul class="cart_total">
+              <li>
+                  <div class="total">
+                      <h5>Sub Total : <span>£57.00</span>
+                      </h5>
+                  </div>
+              </li>
+              <li>
+                  <div class="buttons">
+                      <a href="#!" class="btn view-cart">View Cart</a>
+                      <a href="checkout.html" class="btn checkout">Check Out</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+<!-- footer -->
+<footer> 
+  <section class="section-b-space footer-1">
+    <div class="custom-container container">
+      <div class="row"> 
+        <div class="col-md-3 col-lg-4 col-md-6">
+          <div class="footer-content">
+            <div class="footer-logo"><a href="index.html"> <img class="img-fluid footer-img" src="../assets/images/navlogo.png" alt="Footer Logo"/>COFFEE</a></div>
+            <ul> 
+              <li><i class="fa-solid fa-location-dot"></i>
+                <h6>26, Starts Hollow Colony, Denver, Colorado, United States</h6>
+              </li>
+              <li> <i class="fa-solid fa-phone"></i>
+                <h6>+91 123456789</h6>
+              </li>
+              <li><i class="fa-solid fa-envelope"></i>
+                <h6>contact@CCD.com</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col offset-xl-1">
+          <div class="footer-content">
+            <div> 
+              <div class="footer-title d-md-block"> 
+                <h5>About Us</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">Home</a></li>
+                  <li> <a class="nav" href="shop-list.html">Shop</a></li>
+                  <li> <a class="nav" href="product-detail.html">Product</a></li>
+                  <li> <a class="nav" href="login.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block">
+                <h5>New Categories</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="product-detail.html">Latest Package</a></li>
+                  <li> <a class="nav" href="product-detail.html">Branded Beans</a></li>
+                  <li> <a class="nav" href="shop-list.html">New Stocks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>Get Help</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="checkout.html">Your Orders</a></li>
+                  <li> <a class="nav" href="login.html">Your Account</a></li>
+                  <li> <a class="nav" href="checkout.html">Track Orders</a></li>
+                  <li> <a class="nav" href="#!">Your Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>My Account</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">My Account</a></li>
+                  <li> <a class="nav" href="login.html">Login/Register</a></li>
+                  <li> <a class="nav" href="#!">Cart</a></li>
+                  <li> <a class="nav" href="#!">Delivery FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+           <div class="footer-end">
+            <h6>©2025 Copyright By Themeforest Powered By Pixelstrap.</h6>
+          </div>
+  </div>
+</footer>
+    <!--Js-query-link-->
+    <script src="../assets/js/jquery-2.2.0.min.js"></script>
+
+    <!--Js-bootstrap-link-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    
+    <!--Js-slick-link-->
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+
+    <!--Js-Mega-menu-link-->
+    <script src="../assets/js/rtl.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/quantity-2.js"></script>
+    <script src="../assets/js/addnum.js"></script>
+
+  </body>
+</html>

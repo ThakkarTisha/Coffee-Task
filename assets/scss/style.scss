@@ -1,0 +1,35 @@
+// -------------------------------------------------------------
+// 1.Base css
+//         1.1 Reset CSS
+//         1.2 Typography CSS
+// 2.Pages css
+//         2.1 Shop css  
+//         2.2 Product css             
+// 3.Themes css
+//         3.1 Responsive css
+// 4.Utils css
+//         4.1 variables css
+//         4.2 Price-range css
+// -------------------------------------------------------------
+
+// *** Utils ***
+@import "./utils/variables";
+@import "./utils/price-range";
+
+
+//	*** Base ***
+@import "./base/reset";
+@import "./base/typography";
+
+//	*** Pages ***
+@import "./pages/product";
+@import "./pages/product-detail";
+@import "./pages/shop";
+@import "./pages/login";
+@import "./pages/checkout";
+
+//	*** Themes ***
+@import "./themes/responsive";
+@import "./themes/rtl";
+@import "./themes/dark";
+

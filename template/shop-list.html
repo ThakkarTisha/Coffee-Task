@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="../assets/images/shoplogo.jpg" type="image/x-icon">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+
+    <!-- Plugins css start-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Plugins css Ends-->
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--Custom-css-->
+    <link rel="stylesheet" href="../assets/scss/style.css">
+
+  </head> 
+<body class="shop-list-page">
+
+<!-- Header start-->
+<header>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#!">
+            <img src="../assets/images/navlogo.png" alt="">COFFEE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Log-in</a></li>
+                  <li><a class="dropdown-item" href="register.html">Register</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shop-list.html">Product-list</a></li>
+                  <li><a class="dropdown-item" href="product-detail.html">Product-detail</a></li>
+                  <li><a class="dropdown-item" href="#!">Shop</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+              </li>
+              <li class="icons">
+                <a href="login.html">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </li>
+              <li class="onhover-div mobile-cart icons">
+                <div data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </li>
+              <li class="icons">
+                <a href="#!">
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+  </div>
+  <!-- breadcrumb start -->
+  <div class="breadcrumb-section">
+    <nav class="theme-breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              <a href="product-detail.html">Product-List</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- breadcrumb End -->
+</header>
+
+<!-- Header Ends-->
+<!--Slider-section start -->
+  <div class="container">
+    <div class="swiper banner-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <img src="../assets/images/BANNER.png" alt="slider-img">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <img src="../assets/images/BANNER.png" alt="slider-img">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <img src="../assets/images/BANNER.png" alt="slider-img">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+<!--Slider-Section ends -->
+
+<!--Shop-Section start -->
+  <div class="shop_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 d-lg-block d-none shop-filter">
+          <div class="shop-filter-block">
+            <button class="shop-mobile-back btn">
+              <span class="filter-back">back</span>
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <div class="shop-collapse-block open">
+              <div class="accordion collection-accordion" id="filterAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Categories </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <ul class="collection-listing theme-scrollbar">
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox1">
+                              <label class="form-check-label" for="checkbox1">
+                                 Hot Chocolate
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox2">
+                              <label class="form-check-label" for="checkbox1">
+                                Frappe
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox3">
+                              <label class="form-check-label" for="checkbox1">
+                                  Cold coffee
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox4">
+                              <label class="form-check-label" for="checkbox1">
+                                  Hot coffee
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox5">
+                              <label class="form-check-label" for="checkbox1">
+                                  Espresso
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox6">
+                              <label class="form-check-label" for="checkbox1">
+                                  Mocha
+                              </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="true">
+                    Quantity</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <ul class="collection-listing theme-scrollbar">
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox7">
+                              <label class="form-check-label" for="checkbox1">
+                                  50gm
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox8">
+                              <label class="form-check-label" for="checkbox1">
+                                  100gm
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox9">
+                              <label class="form-check-label" for="checkbox1">
+                                  150gm
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox10">
+                              <label class="form-check-label" for="checkbox1">
+                                  200gm
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox11">
+                              <label class="form-check-label" for="checkbox1">
+                                  250gm
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox12">
+                              <label class="form-check-label" for="checkbox1">
+                                  500gm
+                              </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    Your Choices</button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <ul class="collection-listing theme-scrollbar">
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox13">
+                              <label class="form-check-label" for="checkbox1">
+                                  Hot coffee
+                              </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value=""
+                                  id="checkbox14">
+                              <label class="form-check-label" for="checkbox1">
+                                  Cold Brew
+                              </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseSix">
+                          Price </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show">
+                      <div class="accordion-body price-body">
+                          <div class="wrapper">
+                              <div class="range-slider">
+                                  <input type="text" class="js-range-slider" value="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-12 shop-filter">
+          <div class="grid-btn">
+            <button type="button" class="grid-3 active" data-toggle="tooltip" data-placement="bottom" title="grid-3">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="grid-4" type="button" data-toggle="tooltip" data-placement="bottom" title="grid-4">
+              <i class="fa-solid fa-grip-lines-vertical"></i><i class="fa-solid fa-grip-lines-vertical"></i>
+            </button>
+            <button class="grid-list" type="button" data-toggle="tooltip" data-placement="bottom" title="grid-List">
+              <i class="fa-solid fa-list"></i>
+            </button>
+          </div>
+          <div class="row g-4 row-cols-xl-3 row-cols-sm-2 row-cols-1 all-product-card grid-3-view">
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee1.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Iced Coffee</h5>
+                            <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                              steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                              buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(3.5)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£8.00</span>
+                        </h5>
+                        <div class="add-number">
+                          <button class="minus">
+                            <i class="fa-solid fa-minus"></i>
+                          </button>
+                          <input type="number" value="1" min="1" max="5">
+                          <button class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee2.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Americano</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(4.0)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£7.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee3.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Hot Chocolate</h5>  
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star-half-stroke"></i>
+                                </li>
+                            </ul>
+                            <span>(4.5)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£9.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee4.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Premium Roast</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(4.0)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£8.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee1.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Iced Coffee</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(2.5)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£8.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee2.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Americano</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(3.5)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£7.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee3.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Hot Chocolate</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(4.0)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£9.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-box-3 h-100 wow fadeInUp">
+                <div class="product-header">
+                  <div class="product-image">
+                    <a href="product-detail.html">
+                      <img src="../assets/images/coffee4.webp"
+                          class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-target="#view">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="#!">
+                              <i class="fa-solid fa-rotate"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="#!" class="notifi-wishlist">
+                              <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product-footer">
+                    <div class="product-detail">
+                        <a href="product-detail.html">
+                            <h5 class="name">Premium Roast</h5>
+                                               <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                        </a>
+                        <div class="product-rating mt-2">
+                            <ul class="rating">
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </li>
+                                <li>
+                                  <i class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>(3.5)</span>
+                        </div>
+                        <h6 class="unit">In Stock</h6>
+                        <h5 class="price"><span class="theme-color">£8.00</span>
+                        </h5>
+                        <div class="add-number">
+                        <button class="minus">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1" max="5">
+                        <button class="plus">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-pagination">
+            <div class="theme-paggination-block">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#!" aria-label="Previous">
+                                <span>
+                                    <i class="ri-arrow-left-s-line"></i>
+                                </span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#!" aria-label="Next">
+                                <span>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title">My Cart(2)</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="sidebar-title">
+            <a href="#!">Clear Cart</a>
+        </div>
+        <div class="cart-media">
+            <ul class="cart-product">
+                <li>
+                    <div class="media">
+                        <a href="#!">
+                            <img src="../assets/images/product1.webp" class="img-fluid"
+                                alt="Coffee-img">
+                        </a>
+                        <div class="media-body">
+                            <a href="#!">
+                                <h4>Campfire Blend</h4>
+                            </a>
+                            <h4 class="quantity">
+                                <span>2 x £19.00</span>
+                            </h4>
+  
+                            <div class="quantity-content">
+                              <div class="quantity">
+                                  <button class="minus" aria-label="Decrease">&minus;</button>
+                                  <input type="number" class="input-box" value="1" min="1" max="10">
+                                  <button class="plus" aria-label="Increase">&plus;</button>
+                              </div>
+                          </div>
+  
+                            <div class="close-circle">
+                                <button class="close_button delete-button" type="submit">
+                                    <i class="ri-delete-bin-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#!">
+                            <img src="../assets/images/product2.png" class="img-fluid"
+                                alt="Classic Jacket">
+                        </a>
+                        <div class="media-body">
+                            <a href="#!">
+                                <h4>Basecamp Blend</h4>
+                            </a>
+                            <h4 class="quantity">
+                                <span>1 x £19.00</span>
+                            </h4>
+                            <div class="quantity-content">
+                              <div class="quantity">
+                                  <button class="minus" aria-label="Decrease">&minus;</button>
+                                  <input type="number" class="input-box" value="1" min="1" max="10">
+                                  <button class="plus" aria-label="Increase">&plus;</button>
+                              </div>
+                          </div>
+                            <div class="close-circle">
+                                <button class="close_button delete-button" type="submit">
+                                    <i class="ri-delete-bin-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cart_total">
+                <li>
+                    <div class="total">
+                        <h5>Sub Total : <span>£57.00</span>
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="buttons">
+                        <a href="#!" class="btn view-cart">View Cart</a>
+                        <a href="checkout.html" class="btn checkout">Check Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+<!--Shop-Section Ends -->
+<div class="rtl-buttons">
+  <div class="sections">
+    <h6>RTL Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="rtlmode" class="form-check-input">
+    </div>
+  </div>
+  <div class="sections">
+    <h6>Dark Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="darkmode" class="form-check-input">
+    </div>
+  </div>
+</div>
+
+
+<footer> 
+  <section class="section-b-space footer-1">
+    <div class="custom-container container">
+      <div class="row"> 
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="footer-content">
+            <div class="footer-logo"><a href="index.html"> <img class="img-fluid footer-img" src="../assets/images/navlogo.png" alt="Footer Logo"/>COFFEE</a></div>
+            <ul> 
+              <li><i class="fa-solid fa-location-dot"></i>
+                <h6>26, Starts Hollow Colony, Denver, Colorado, United States</h6>
+              </li>
+              <li> <i class="fa-solid fa-phone"></i>
+                <h6>+91 123456789</h6>
+              </li>
+              <li><i class="fa-solid fa-envelope"></i>
+                <h6>contact@CCD.com</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col offset-xl-1">
+          <div class="footer-content">
+            <div> 
+              <div class="footer-title d-md-block"> 
+                <h5>About Us</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">Home</a></li>
+                  <li> <a class="nav" href="shop-list.html">Shop</a></li>
+                  <li> <a class="nav" href="product-detail.html">Product</a></li>
+                  <li> <a class="nav" href="login.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block">
+                <h5>New Categories</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="product-detail.html">Latest Package</a></li>
+                  <li> <a class="nav" href="product-detail.html">Branded Beans</a></li>
+                  <li> <a class="nav" href="shop-list.html">New Stocks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>Get Help</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="checkout.html">Your Orders</a></li>
+                  <li> <a class="nav" href="login.html">Your Account</a></li>
+                  <li> <a class="nav" href="checkout.html">Track Orders</a></li>
+                  <li> <a class="nav" href="#!">Your Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>My Account</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">My Account</a></li>
+                  <li> <a class="nav" href="login.html">Login/Register</a></li>
+                  <li> <a class="nav" href="#!">Cart</a></li>
+                  <li> <a class="nav" href="#!">Delivery FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+           <div class="footer-end">
+            <h6>©2025 Copyright By Themeforest Powered By Pixelstrap.</h6>
+          </div>
+  </div>
+</footer>
+<!-- Bootstrap js-->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- latest jquery-->
+<script src="../assets/js/jquery-2.2.0.min.js"></script>
+
+<!-- Plugins JS start-->
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<script src="../assets/js/price-range.js"></script>
+<!-- Plugins JS Ends-->
+
+<!--Custom-Js-->
+<script src="../assets/js/quantity-2.js"></script>
+<script src="../assets/js/addnum.js"></script>
+<script src="../assets/js/grid.js"></script>
+<script src="../assets/js/rtl.js"></script>
+<script src="../assets/js/cart.js"></script>
+
+
+<script>
+  var swiper = new Swiper(".banner-slider", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+.section-space{
+    padding: 50px 0;
+}
+.theme-scrollbar{
+    &::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: #fff; 
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        background: $primary-color; 
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary-color; 
+      }
+}
+.product-detail , .checkout_wrapper{
+  padding-bottom: 20px;
+}

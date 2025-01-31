@@ -1,0 +1,257 @@
+.checkout_wrapper{
+    .left-detail{
+        .checkout-detail{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+                li{
+                    position: relative;
+                    width: 100%;    
+                    .checkout-box{
+                        padding: calc(14px + (29 - 14) * ((100vw - 320px) / (1920 - 320)));
+                        background-color: #f8f8f8;
+                        border-radius: 0;
+                        border: 1px solid #eee;
+                        position: relative;
+                        .checkout-title{
+                            border-bottom: 1px solid #ededed;
+                            margin-bottom: 20px;
+                            padding-bottom: 12px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            h4{
+                                font-weight: 600;
+                                font-size:18px;
+                                letter-spacing: unset;
+                                text-transform: unset;
+                                margin: 0;
+                                line-height: 1.3;
+                                color: $black;
+                            }
+                        }
+                        .checkout-content{
+                            .delivery-address{
+                                gap: 10px;
+                                border-radius: 0;
+                                padding: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
+                                background-color: #fff;
+                                height: 100%;
+                                display: flex;
+                                position: relative;
+                                cursor: pointer;
+                               .form-check-input:checked {
+                                    background-color: $primary-color;
+                                    border-color: gray;
+                                    &::before {
+                                        border-color: $primary-color;
+                                        color: $primary-color;
+                                    }
+                                    &::after {
+                                        transform: translate(-50%, -50%) scale(1);
+                                    }
+                                }
+                                .form-check-label {
+                                    display: grid;
+                                    gap: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+                                    cursor: pointer;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    margin-bottom: 0;
+                                    width: 100%;
+                                    .name{
+                                        font-weight: 600;
+                                        margin: 0;
+                                        text-transform: none;
+                                        letter-spacing: unset;
+                                        line-height: 1.3;
+                                        font-size: 18px;
+                                        color: $primary-color;
+                                    }
+                                    .address{
+                                        line-height: 1.4;
+                                        margin-bottom: 0;
+                                        font-weight: 400;
+                                        color: #222;
+                                        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                                        span{
+                                            margin-right: 4px;
+                                            font-weight: 600;
+                                            color: #222;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }            
+                }
+            }
+        }
+    }
+    .right-detail{
+        position: sticky;
+        top: 20px;
+        left: 0;
+        .detail-box{
+            position: relative;
+            background-color: #f8f8f8;
+            border: 1px solid #eeeeee;
+            border-radius: 0;
+            padding: 18px;
+            inset: unset;
+            .order-box{
+                margin: 0;
+                .title-box{
+                    position: relative;
+                    color: #444;
+                    font-weight: 600;
+                    font-size: 22px;
+                    border-bottom: 1px solid #ededed ;
+                    margin-bottom: 20px;
+                    padding-bottom: 8px;
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                        letter-spacing: unset;
+                        color: $black;
+                        line-height: 1.3;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        margin: 4px 0 0;
+                    }
+                }
+                .qty{
+                    margin: 0;
+                    border: none;
+                    li{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 15px;
+                        color: #444;
+                        line-height: 20px;
+                        margin-bottom: 18px;
+                        .cart-image{
+                            width: 60px;                              
+                        }
+                        .cart-content{
+                            width: calc(100% - 71px);
+                            display: grid                               ;
+                            grid-template-columns: 1fr auto;
+                            gap: 9px;
+                            h4{
+                                line-height: 1.3;
+                                font-weight: 600;
+                                font-size: 15px;
+                                margin-bottom: 4px;
+                                letter-spacing: unset;
+                                text-transform: unset;
+                                color: $black;
+                            }
+                            h6{
+                                font-weight: 500;
+                                margin: 0;
+                                font-size: 16px;
+                                line-height: 1.3;
+                                color: #444;
+                            }
+                        }
+                        span{
+                            font-size:18px;
+                            text-align: right;
+                            line-height: 1.3;
+                            font-weight: 600;
+                            width: auto;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .detail-box + .detail-box{
+            margin-top: 20px;
+            .order-box{
+                .custom-box{
+                    .sub-total{
+                        position: relative;
+                        li{
+                            position: relative;
+                            display: flex;
+                            gap: 9px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #777;
+                            line-height: 1.3;
+                            justify-content: space-between;
+                            width: 100%;
+                            padding-bottom: 20px;
+                            .count {
+                                text-align: right;
+                                position: relative;
+                                font-size: 17px;
+                                line-height: 20px;
+                                color: $primary-color;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .total{
+                    position: relative;
+                    margin-top: 13px;
+                    padding-top: 13px;
+                    border-top: 1px solid #eee;
+                    li {
+                        font-size: 22px;
+                        position: relative;
+                        display: flex;
+                        gap: 9px;
+                        font-weight: 600;
+                        color: #777;
+                        line-height: 1.3;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding-bottom: 20px;
+                        .count{
+                            font-size: px;
+                            text-align: right;
+                            position: relative;
+                            line-height: 20px;
+                            color: $primary-color;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .text-end{
+                    text-align: right;
+                    .order-btn {
+                        width: 100%;
+                        margin-top: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
+                        background-color: #9f5d26c4;
+                        border-radius: 0;
+                        padding: calc(10px + (13 - 10) * ((100vw - 320px) / (1920 - 320)));
+                        color: #fff;
+                        font-weight: 600;
+                        letter-spacing: unset;
+                        text-transform: unset;
+                        border: 1px solid #9f5d26c4;
+                        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+                        height: auto;
+                        border: 1px solid transparent;
+                        &:hover{
+                            color: #9f5d26c4;
+                            background-color: $white;
+                            border: 1px solid #9f5d26c4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

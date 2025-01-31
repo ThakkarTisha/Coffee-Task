@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../assets/images/shoplogo.jpg" type="image/x-icon">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+
+    <!-- Plugins css start-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Plugins css Ends-->
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--Custom-css-->
+    <link rel="stylesheet" href="../assets/scss/style.css">
+
+  </head> 
+<body class="login-page">
+
+<!-- Header start-->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#!">
+              <img src="../assets/images/navlogo.png" alt="">COFFEE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Log-in</a></li>
+                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Product
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="shop-list.html">Product-list</a></li>
+                    <li><a class="dropdown-item" href="product-detail.html">Product-detail</a></li>
+                    <li><a class="dropdown-item" href="#!">Shop</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                </li>
+                <li class="icons">
+                  <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                </li>
+                <li class="onhover-div mobile-cart icons">
+                  <div data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+              </li>
+                <li class="icons">
+                  <a href="#!">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+      <nav class="theme-breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="#!">Login-Detail</a></li>
+          </ol>
+      </nav>
+  </div>
+<!-- breadcrumb End -->
+  </header>
+<!-- Header Ends-->
+
+<!-- Section start -->
+ <section class="login_wrapper">
+  <div class="container">
+    <div class="row align-items-center border border-light-subtle">
+      <div class="col-xl-6">
+          <div class="login-img justify-content-xl-end justify-content-center">
+              <img src="../assets/images/login2.jpg" alt="login-img">
+          </div>
+      </div>
+      <div class="col-xl-6 d-flex justify-content-xl-start justify-content-center">
+          <div class="login-form">
+              <h1>LOGIN</h1>
+              <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Forgot Password?</label>
+                  </div>
+                  <a class="buttons" href="login.html">Login</a>
+                  <div class="content">
+                      <h5>Don't You have an account?</h5>
+                      <a href="register.html">Create Your Account. <span>CLICK HERE</span></a>
+                  </div>
+                </form>
+          </div>
+      </div>
+  </div>
+  </div>
+ </section>
+
+ <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas">
+  <div class="offcanvas-header">
+      <h3 class="offcanvas-title">My Cart(2)</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+          <i class="ri-close-line"></i>
+      </button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="sidebar-title">
+          <a href="#!">Clear Cart</a>
+      </div>
+      <div class="cart-media">
+          <ul class="cart-product">
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product1.webp" class="img-fluid"
+                              alt="Coffee-img">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Campfire Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>2 x £19.00</span>
+                          </h4>
+
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product2.png" class="img-fluid"
+                              alt="Classic Jacket">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Basecamp Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>1 x £19.00</span>
+                          </h4>
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <ul class="cart_total">
+              <li>
+                  <div class="total">
+                      <h5>Sub Total : <span>£57.00</span>
+                      </h5>
+                  </div>
+              </li>
+              <li>
+                  <div class="buttons">
+                      <a href="#!" class="btn view-cart">View Cart</a>
+                      <a href="checkout.html" class="btn checkout">Check Out</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<!-- Section End -->
+<div class="rtl-buttons">
+  <div class="sections">
+    <h6>RTL Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="rtlmode" class="form-check-input">
+    </div>
+  </div>
+  <div class="sections">
+    <h6>Dark Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="darkmode" class="form-check-input">
+    </div>
+  </div>
+</div>
+
+<footer> 
+  <section class="section-b-space footer-1">
+    <div class="custom-container container">
+      <div class="row"> 
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="footer-content">
+            <div class="footer-logo"><a href="index.html"> <img class="img-fluid footer-img" src="../assets/images/navlogo.png" alt="Footer Logo"/>COFFEE</a></div>
+            <ul> 
+              <li><i class="fa-solid fa-location-dot"></i>
+                <h6>26, Starts Hollow Colony, Denver, Colorado, United States</h6>
+              </li>
+              <li> <i class="fa-solid fa-phone"></i>
+                <h6>+91 123456789</h6>
+              </li>
+              <li><i class="fa-solid fa-envelope"></i>
+                <h6>contact@CCD.com</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col offset-xl-1">
+          <div class="footer-content">
+            <div> 
+              <div class="footer-title d-md-block"> 
+                <h5>About Us</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">Home</a></li>
+                  <li> <a class="nav" href="shop-list.html">Shop</a></li>
+                  <li> <a class="nav" href="product-detail.html">Product</a></li>
+                  <li> <a class="nav" href="login.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block">
+                <h5>New Categories</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="product-detail.html">Latest Package</a></li>
+                  <li> <a class="nav" href="product-detail.html">Branded Beans</a></li>
+                  <li> <a class="nav" href="shop-list.html">New Stocks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>Get Help</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="checkout.html">Your Orders</a></li>
+                  <li> <a class="nav" href="login.html">Your Account</a></li>
+                  <li> <a class="nav" href="checkout.html">Track Orders</a></li>
+                  <li> <a class="nav" href="#!">Your Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>My Account</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">My Account</a></li>
+                  <li> <a class="nav" href="login.html">Login/Register</a></li>
+                  <li> <a class="nav" href="#!">Cart</a></li>
+                  <li> <a class="nav" href="#!">Delivery FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+           <div class="footer-end">
+            <h6>©2025 Copyright By Themeforest Powered By Pixelstrap.</h6>
+          </div>
+  </div>
+</footer>
+<!-- Bootstrap js-->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- latest jquery-->
+<script src="../assets/js/jquery-2.2.0.min.js"></script>
+
+<!-- Plugins JS start-->
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<!-- Plugins JS Ends-->
+<script src="../assets/js/rtl.js"></script>
+<!--Custom-Js-->
+<script src="../assets/js/quantity-2.js"></script>
+<script src="../assets/js/addnum.js"></script>
+<script src="../assets/js/cart.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="shortcut icon" href="../assets/images/shoplogo.jpg" type="image/x-icon">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+
+    <!-- Plugins css start-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Plugins css Ends-->
+
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!--Custom-css-->
+    <link rel="stylesheet" href="../assets/scss/style.css">
+
+  </head> 
+<body class="product-detail-page">
+
+<!-- Header start-->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+          <a class="navbar-brand" href="#!">
+              <img src="../assets/images/navlogo.png" alt="">COFFEE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Log-in</a></li>
+                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Product
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="shop-list.html">Product-list</a></li>
+                    <li><a class="dropdown-item" href="product-detail.html">Product-detail</a></li>
+                    <li><a class="dropdown-item" href="#!">Shop</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                </li>
+                <li class="icons">
+                  <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                </li>
+                <li class="onhover-div mobile-cart icons">
+                  <div data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+              </li>
+                <li class="icons">
+                  <a href="#!">
+                    <i class="fa-solid fa-heart"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+      <nav class="theme-breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <a href="product-detail.html">Product-Detail</a></li>
+          </ol>
+      </nav>
+  </div>
+<!-- breadcrumb End -->
+  </header>
+
+<!-- Header Ends-->
+
+
+
+<!-- Section start -->
+<div class="product-detail">
+  <div class="container">
+      <div class="row">
+            <div class="col-lg-6 col-sm-12 product-wrapper">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product1.webp" class="img-fluid" alt="swipper-img1">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product2.png" class="img-fluid" alt="swipper-img2">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/img-3-shop.webp" class="img-fluid" alt="swipper-img3">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product1.webp" class="img-fluid" alt="swipper-img4">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product1.webp" class="img-fluid" alt="swipper-img1">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product2.png" class="img-fluid" alt="swipper-img2">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/img-3-shop.webp" class="img-fluid" alt="swipper-img3">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/product1.webp" class="img-fluid" alt="swipper-img4">
+                      </div>
+                    </div>
+                  </div>                
+            </div>
+            <div class="col-lg-6 col-sm-12 product-wrapper">
+                <div class="product-header">
+                  <div class="sale-info">
+                    <img src="../assets/images/fire(1).gif" alt="sale">
+                    <p>Selling fast ! 51 people have this in their carts.</p>
+                  </div>
+                    <a href="product-detail.html">
+                        <h4 class="name">Campfire Blend</h4>
+                    </a>
+                    <h3 class="span-name">£19.00 <del>£30.00</del></h3>
+                    <div class="product-rating">
+                        <ul class="rating">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                              <i class="fa-regular fa-star"></i>
+                            </li>
+                        </ul>
+                        <span>(4.0)</span>
+                    </div>
+                    <p>Our Caramel Macchiato recipe features rich, dark-roast espresso served with 
+                      steamed whole milk, mixed with sweet caramel syrup, and topped with ribbons of 
+                      buttery caramel.260Cal. 7g Total Fat. 41g Total Carbs. 8g Protein.</p>
+                </div>
+                <div class="product-info">
+                    <span>Vendor: Collette</span>
+                    <span>SKU: W0690048</span>
+                    <span>Availability: In stock</span>
+                    <span>Product type: Dincidunteros</span>
+                </div>
+                <div class="color-thumbnail">
+                    <h6>Your Choices!</h6>
+                    <ul>
+                        <li><a href="#!">Hot Coffe</a></li>
+                        <li><a href="#!">Cold Brew</a></li>
+                    </ul>
+                </div>
+                <div class="size-thumbnail">
+                    <h6>Options For you :</h6>
+                    <ul>
+                        <li><a href="#!">50gm</a></li>
+                        <li><a href="#!">100gm</a></li>
+                        <li><a href="#!">200gm</a></li>
+                        <li><a href="#!">500gm</a></li>
+                    </ul>
+                </div>
+                <div class="quantity-content">
+                    <h6>Quantity </h6>
+                    <div class="quantity">
+                        <button class="minus" aria-label="Decrease">&minus;</button>
+                        <input type="number" class="input-box" value="1" min="1" max="10">
+                        <button class="plus" aria-label="Increase">&plus;</button>
+                    </div>
+                </div>
+                <div class="product-options">
+                  <ul>
+                    <li><a href="#!"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#!"><i class="fa-solid fa-rotate"></i></a></li>
+                    <li><a href="#!"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#!"><i class="fa-solid fa-share-nodes"></i></a></li>
+                  </ul>
+                </div>
+                <div class="add-to-cart">
+                  <button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+                  <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+                </div>
+                <div class="delivery-details">
+                  <h6>Delivery Details</h6>
+                  <div class="time-details"><i class="fa-solid fa-truck"></i>Your order is likely to reach you within 7 days.</div>
+                  <div class="return-policy"><i class="fa-solid fa-arrow-right-arrow-left"></i>Hassle free returns within 7 Days.</div>
+                </div>
+            </div>
+            <div class="related-product">
+              <h3>Related Products</h3>
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow">
+                  <div class="product-box">
+                    <div class="product-header">
+                      <div class="product-image">
+                        <a href="product-detail.html">
+                          <img src="../assets/images/coffee1.webp"
+                              class="img-fluid blur-up lazyload" alt="">
+                        </a>
+                        <ul class="product-option">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                <a href="product-detail.html">
+                                  <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                <a href="product-detail.html" class="notifi-wishlist">
+                                  <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-detail">
+                            <a href="product-detail.html">
+                                <h5 class="name">Iced Coffee</h5>
+                            </a>
+                            <div class="product-rating mt-2">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </li>
+                                    <li>
+                                      <i class="fa-regular fa-star"></i>
+                                    </li>
+                                </ul>
+                                <span>(3.5)</span>
+                            </div>
+                            <h6 class="unit">In Stock</h6>
+                            <h5 class="price"><span class="theme-color">£8.00</span>
+                            </h5>
+                            <div class="add-number">
+                              <button class="minus">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="number" value="1" min="1" max="5">
+                              <button class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow">
+                  <div class="product-box">
+                    <div class="product-header">
+                      <div class="product-image">
+                        <a href="product-detail.html">
+                          <img src="../assets/images/coffee2.webp"
+                              class="img-fluid blur-up lazyload" alt="">
+                        </a>
+                        <ul class="product-option">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                <a href="product-detail.html">
+                                  <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                <a href="product-detail.html" class="notifi-wishlist">
+                                  <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-detail">
+                            <a href="product-detail.html">
+                                <h5 class="name">Americano</h5>
+                            </a>
+                            <div class="product-rating mt-2">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </li>
+                                    <li>
+                                      <i class="fa-regular fa-star"></i>
+                                    </li>
+                                </ul>
+                                <span>(3.5)</span>
+                            </div>
+                            <h6 class="unit">In Stock</h6>
+                            <h5 class="price"><span class="theme-color">£7.00</span>
+                            </h5>
+                            <div class="add-number">
+                              <button class="minus">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="number" value="1" min="1" max="5">
+                              <button class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow">
+                  <div class="product-box">
+                    <div class="product-header">
+                      <div class="product-image">
+                        <a href="product-detail.html">
+                          <img src="../assets/images/coffee3.webp"
+                              class="img-fluid blur-up lazyload" alt="">
+                        </a>
+                        <ul class="product-option">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                <a href="product-detail.html">
+                                  <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                <a href="product-detail.html" class="notifi-wishlist">
+                                  <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-detail">
+                            <a href="product-detail.html">
+                                <h5 class="name">Hot Chocolate</h5>
+                            </a>
+                            <div class="product-rating mt-2">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </li>
+                                    <li>
+                                      <i class="fa-regular fa-star"></i>
+                                    </li>
+                                </ul>
+                                <span>(3.5)</span>
+                            </div>
+                            <h6 class="unit">In Stock</h6>
+                            <h5 class="price"><span class="theme-color">£9.00</span>
+                            </h5>
+                            <div class="add-number">
+                              <button class="minus">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="number" value="1" min="1" max="5">
+                              <button class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow">
+                  <div class=" product-box">
+                    <div class="product-header">
+                      <div class="product-image">
+                        <a href="product-detail.html">
+                          <img src="../assets/images/coffee4.webp"
+                              class="img-fluid blur-up lazyload" alt="">
+                        </a>
+                        <ul class="product-option">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                    data-bs-target="#view">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                <a href="product-detail.html">
+                                  <i class="fa-solid fa-rotate"></i>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                                <a href="product-detail.html" class="notifi-wishlist">
+                                  <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="product-detail">
+                            <a href="product-detail.html">
+                                <h5 class="name">Premium Roast</h5>
+                            </a>
+                            <div class="product-rating mt-2">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </li>
+                                    <li>
+                                      <i class="fa-regular fa-star"></i>
+                                    </li>
+                                </ul>
+                                <span>(3.5)</span>
+                            </div>
+                            <h6 class="unit">In Stock</h6>
+                            <h5 class="price"><span class="theme-color">£8.00</span>
+                            </h5>
+                            <div class="add-number">
+                              <button class="minus">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="number" value="1" min="1" max="5">
+                              <button class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas">
+  <div class="offcanvas-header">
+      <h3 class="offcanvas-title">My Cart(2)</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+          <i class="ri-close-line"></i>
+      </button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="sidebar-title">
+          <a href="#!">Clear Cart</a>
+      </div>
+      <div class="cart-media">
+          <ul class="cart-product">
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product1.webp" class="img-fluid"
+                              alt="Coffee-img">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Campfire Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>2 x £19.00</span>
+                          </h4>
+
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="media">
+                      <a href="#!">
+                          <img src="../assets/images/product2.png" class="img-fluid"
+                              alt="Classic Jacket">
+                      </a>
+                      <div class="media-body">
+                          <a href="#!">
+                              <h4>Basecamp Blend</h4>
+                          </a>
+                          <h4 class="quantity">
+                              <span>1 x £19.00</span>
+                          </h4>
+                          <div class="quantity-content">
+                            <div class="quantity">
+                                <button class="minus" aria-label="Decrease">&minus;</button>
+                                <input type="number" class="input-box" value="1" min="1" max="10">
+                                <button class="plus" aria-label="Increase">&plus;</button>
+                            </div>
+                        </div>
+                          <div class="close-circle">
+                              <button class="close_button delete-button" type="submit">
+                                  <i class="ri-delete-bin-line"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <ul class="cart_total">
+              <li>
+                  <div class="total">
+                      <h5>Sub Total : <span>£57.00</span>
+                      </h5>
+                  </div>
+              </li>
+              <li>
+                  <div class="buttons">
+                      <a href="#!" class="btn view-cart">View Cart</a>
+                      <a href="checkout.html" class="btn checkout">Check Out</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+<!-- Section End -->
+<div class="rtl-buttons">
+  <div class="sections">
+    <h6>RTL Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="rtlmode" class="form-check-input">
+    </div>
+  </div>
+  <div class="sections">
+    <h6>Dark Mode</h6>
+    <div class="form-check form-switch">
+      <input type="checkbox" role="switch" id="darkmode" class="form-check-input">
+    </div>
+  </div>
+</div>
+
+<footer> 
+  <section class="section-b-space footer-1">
+    <div class="custom-container container">
+      <div class="row"> 
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="footer-content">
+            <div class="footer-logo"><a href="index.html"> <img class="img-fluid footer-img" src="../assets/images/navlogo.png" alt="Footer Logo"/>COFFEE</a></div>
+            <ul> 
+              <li><i class="fa-solid fa-location-dot"></i>
+                <h6>26, Starts Hollow Colony, Denver, Colorado, United States</h6>
+              </li>
+              <li> <i class="fa-solid fa-phone"></i>
+                <h6>+91 123456789</h6>
+              </li>
+              <li><i class="fa-solid fa-envelope"></i>
+                <h6>contact@CCD.com</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col offset-xl-1">
+          <div class="footer-content">
+            <div> 
+              <div class="footer-title d-md-block"> 
+                <h5>About Us</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">Home</a></li>
+                  <li> <a class="nav" href="shop-list.html">Shop</a></li>
+                  <li> <a class="nav" href="product-detail.html">Product</a></li>
+                  <li> <a class="nav" href="login.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block">
+                <h5>New Categories</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="product-detail.html">Latest Package</a></li>
+                  <li> <a class="nav" href="product-detail.html">Branded Beans</a></li>
+                  <li> <a class="nav" href="shop-list.html">New Stocks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>Get Help</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="checkout.html">Your Orders</a></li>
+                  <li> <a class="nav" href="login.html">Your Account</a></li>
+                  <li> <a class="nav" href="checkout.html">Track Orders</a></li>
+                  <li> <a class="nav" href="#!">Your Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-content">
+            <div>
+              <div class="footer-title d-md-block"> 
+                <h5>My Account</h5>
+                <ul class="footer-details accordion-hidden"> 
+                  <li> <a class="nav" href="index.html">My Account</a></li>
+                  <li> <a class="nav" href="login.html">Login/Register</a></li>
+                  <li> <a class="nav" href="#!">Cart</a></li>
+                  <li> <a class="nav" href="#!">Delivery FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+           <div class="footer-end">
+            <h6>©2025 Copyright By Themeforest Powered By Pixelstrap.</h6>
+          </div>
+  </div>
+</footer>
+<!-- Bootstrap js-->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- latest jquery-->
+<script src="../assets/js/jquery-2.2.0.min.js"></script>
+
+<!-- Plugins JS start-->
+<script src="../assets/js/swiper-bundle.min.js"></script>
+<!-- Plugins JS Ends-->
+<script src="../assets/js/rtl.js"></script>
+<!--Custom-Js-->
+<script src="../assets/js/quantity-2.js"></script>
+<script src="../assets/js/addnum.js"></script>
+<script src="../assets/js/cart.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+</body>
+</html>
+

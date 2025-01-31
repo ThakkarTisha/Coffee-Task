@@ -1,0 +1,154 @@
+/**=====================
+	2.1.Responsive CSS Start
+==========================**/
+.shop_section{
+	.list-view{
+		.product-box-3{
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			gap: 20px;
+			padding: 20px;			
+			.product-image{
+				padding: 0;
+				img{
+					width:200px;
+					max-width: unset;
+					transform: none;
+				}
+			}
+			.product-footer{
+				.product-detail{
+					p {
+						display: block;
+						color: #545050;
+					}
+					.add-number{
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
+	&-cols-xxl-4{
+		.col-49{
+			.product-detail{
+				.add-number{
+					input[type="number"]{
+						width: 116px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px){
+	.shop_section{
+		.list-view{
+			.product-box-3{
+				.product-footer{
+					.product-detail{
+						p{
+							-webkit-line-clamp: 2;
+									-webkit-box-orient: vertical;
+									display: -webkit-box;
+									overflow: hidden;
+						}
+					}
+				}
+			}
+
+		}
+	}	
+	.shop_wrapper{
+		.shop-image{
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.product-wrapper{
+		text-align: center;
+		.product-header{
+			.sale-info , .span-name , .product-rating {
+				justify-content: center;
+			}
+		} 
+		.color-thumbnail , .size-thumbnail{
+			ul {
+				justify-content: center;
+			}
+		} 
+		.quantity-content{
+			align-items: center;
+		}
+		.product-options{
+			display: flex;
+			justify-content: center;
+		}
+		.add-to-cart {
+			justify-content: center;
+		}
+		.delivery-details{
+			.time-details , .return-policy{
+				justify-content: center;
+			}
+		}
+	}	
+	.shop_section{
+		.list-view{
+			.product-box-3{
+				.product-footer{
+					.product-detail{
+						p{
+							display: none;
+						}
+					}
+				}
+			}
+
+		}
+	}	
+}
+@media screen and (max-width: 655px){
+	.main_section{
+		.banner_wrapper{
+			.banner-content{
+				max-width: 100%;
+			}
+		}
+	}	
+}
+@media screen and (max-width: 470px){
+	.shop_section{
+		.list-view{
+			.product-box-3{
+				display: block;
+				justify-content: center;
+			}
+		}
+	}	
+}
+@media screen and (max-width: 992px){
+	.product-detail-page , .shop-list-page , .login-page{
+		header{
+			.breadcrumb-section{
+				.breadcrumb{
+					display: flex;
+					justify-content: center;
+				}
+			}	
+		}
+	}
+	body{
+		.border-section{
+			.service-block + .service-block{
+				border-left: none;
+				border-top: 1px solid #eee;
+			} 
+		}
+	}
+}
+/**=====================
+	2.1.Responsive CSS Ends
+==========================**/

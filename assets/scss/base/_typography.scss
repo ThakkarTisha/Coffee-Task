@@ -1,0 +1,58 @@
+/**=====================
+    1.2 Typography CSS start
+==========================**/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+
+.dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+table {
+  tbody {
+    tr {
+      vertical-align: middle;
+    }
+  }
+}
+* a {
+  text-decoration: none;
+  color: $black;
+}
+/**=====================
+    1.2 Typography CSS Ends
+==========================**/
